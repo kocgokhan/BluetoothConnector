@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BLE &amp; Wifii Connector</string>
+    <string name="name_of_device" >Cihaz Adı</string>
+    <string name="ssiID_of_device" >Cihaz SSI</string>
+    <string name="macID_of_device" >Cihaz MAC</string>
+    <string name="connection_status" >Bağantı Durumu</string>
+
+
+    <string name="device_discovery_started">Yakında ki cihazlar taranıyor&#8230;</string>
+    <string name="device_already_paired">Cihaz zaten eşleşmiş!</string>
+    <string name="device_pairing_success">Cihaz eşleşme başarılı!</string>
+    <string name="enabling_bluetooth">Cihazın bluetooth\'u aktif mi ? &#8230;</string>
+    <string name="device_discovery_stopped">Cihaz tarama iptal edildi</string>
+    <string name="empty_list_message">Cihaz bulunamadı</string>
+    <string name="bluetooth_not_available_title">Bluetooth kullanılamaz</string>
+</resources>
