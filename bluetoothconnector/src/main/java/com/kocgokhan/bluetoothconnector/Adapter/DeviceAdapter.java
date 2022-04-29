@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothController;
 import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothDiscoveryDeviceListener;
 import com.kocgokhan.bluetoothconnector.BlueTooth.View.ListInteractionListener;
+import com.kocgokhan.bluetoothconnector.BlueTooth.View.RecyclerViewClickListener;
 import com.kocgokhan.bluetoothconnector.R;
 import com.kocgokhan.bluetoothconnector.callAdapterProccess;
 
@@ -41,15 +42,19 @@ public class DeviceAdapter
     private BluetoothController bluetooth;
 
     private Context context;
+
+    private RecyclerViewClickListener recyclerViewClickListener;
+
     /**
      * Instantiates a new DeviceRecyclerViewAdapter.
      *
      * @param listener an handler for interaction events.
      */
-    public DeviceAdapter(Context context,ListInteractionListener<BluetoothDevice> listener) {
+    public DeviceAdapter(Context context,ListInteractionListener<BluetoothDevice> listener, RecyclerViewClickListener recyclerViewClickListener ) {
         this.devices = new ArrayList<>();
         this.listener = listener;
         this.context = context;
+        this.recyclerViewClickListener = recyclerViewClickListener;
     }
 
     /**
@@ -78,6 +83,8 @@ public class DeviceAdapter
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
                     listener.onItemClick(holder.mItem);
+
+                    recyclerViewClickListener.recyclerViewListClicked(v,holder.mItem.getName());
                 }
             }
         });

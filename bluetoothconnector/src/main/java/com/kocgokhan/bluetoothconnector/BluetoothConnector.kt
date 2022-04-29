@@ -75,7 +75,7 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
         }
 
 
-        deviceAdapter  = DeviceAdapter(context,this)
+        deviceAdapter  = DeviceAdapter(context,this,null)
         recyclerView = view.findViewById(R.id.device_item_recy)
         recyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
         val emptyView = findViewById<View>(R.id.empty_list)
