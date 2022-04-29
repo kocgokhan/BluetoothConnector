@@ -50,11 +50,9 @@ public class DeviceAdapter
      *
      * @param listener an handler for interaction events.
      */
-    public DeviceAdapter(Context context,ListInteractionListener<BluetoothDevice> listener, RecyclerViewClickListener recyclerViewClickListener ) {
+    public DeviceAdapter(ListInteractionListener<BluetoothDevice> listener ) {
         this.devices = new ArrayList<>();
         this.listener = listener;
-        this.context = context;
-        this.recyclerViewClickListener = recyclerViewClickListener;
     }
 
     /**
