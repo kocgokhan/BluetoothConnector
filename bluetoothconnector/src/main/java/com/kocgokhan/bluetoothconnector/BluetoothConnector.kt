@@ -33,6 +33,8 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
     private lateinit var bondingProgressDialog: ProgressDialog
     private var progressBar : ProgressBar
 
+
+
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.list_device, this, false)
         val set = ConstraintSet()
@@ -128,7 +130,6 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
                     context, "",
                     "Pairing with device $deviceName...", true, false
                 )
-
             } else {
                 /*Toast.makeText(
                     this,
@@ -140,6 +141,7 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
             }
         }
     }
+
 
     override fun startLoading() {
         recyclerView.startLoading()

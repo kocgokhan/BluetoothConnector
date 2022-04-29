@@ -2,22 +2,17 @@ package com.kocgokhan.bluetoothconnector.Adapter;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothController;
 import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothDiscoveryDeviceListener;
 import com.kocgokhan.bluetoothconnector.BlueTooth.View.ListInteractionListener;
-import com.kocgokhan.bluetoothconnector.BlueTooth.View.RecyclerViewClickListener;
 import com.kocgokhan.bluetoothconnector.R;
-import com.kocgokhan.bluetoothconnector.callAdapterProccess;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +76,8 @@ public class DeviceAdapter
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
                     listener.onItemClick(holder.mItem);
+
+
 
                 }
             }
