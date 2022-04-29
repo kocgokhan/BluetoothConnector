@@ -43,7 +43,7 @@ public class DeviceAdapter
 
     private Context context;
 
-    private RecyclerViewClickListener recyclerViewClickListener;
+
 
     /**
      * Instantiates a new DeviceRecyclerViewAdapter.
@@ -82,7 +82,6 @@ public class DeviceAdapter
                     // fragment is attached to one) that an item has been selected.
                     listener.onItemClick(holder.mItem);
 
-                    recyclerViewClickListener.recyclerViewListClicked(v,holder.mItem.getName());
                 }
             }
         });
