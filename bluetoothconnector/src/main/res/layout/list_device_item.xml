@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:text="@string/connection_status"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/purple_200"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/name_of_device" />
         </androidx.constraintlayout.widget.ConstraintLayout>
