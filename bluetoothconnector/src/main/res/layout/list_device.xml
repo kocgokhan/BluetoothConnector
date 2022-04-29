@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="#FB0707"
-        android:text="Cihaz Ara"
+        android:text="Cihaz Tara"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
