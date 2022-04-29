@@ -1,6 +1,7 @@
 package com.kocgokhan.bluetoothconnector.Adapter;
 
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothController;
 import com.kocgokhan.bluetoothconnector.BlueTooth.BluetoothDiscoveryDeviceListener;
 import com.kocgokhan.bluetoothconnector.BlueTooth.View.ListInteractionListener;
 import com.kocgokhan.bluetoothconnector.R;
+import com.kocgokhan.bluetoothconnector.callAdapterProccess;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,14 +40,16 @@ public class DeviceAdapter
      */
     private BluetoothController bluetooth;
 
+    private Context context;
     /**
      * Instantiates a new DeviceRecyclerViewAdapter.
      *
      * @param listener an handler for interaction events.
      */
-    public DeviceAdapter(ListInteractionListener<BluetoothDevice> listener) {
+    public DeviceAdapter(Context context,ListInteractionListener<BluetoothDevice> listener) {
         this.devices = new ArrayList<>();
         this.listener = listener;
+        this.context = context;
     }
 
     /**
@@ -78,6 +82,10 @@ public class DeviceAdapter
             }
         });
     }
+
+
+
+
 
     /**
      * Returns the icon shown on the left of the device inside the list.
