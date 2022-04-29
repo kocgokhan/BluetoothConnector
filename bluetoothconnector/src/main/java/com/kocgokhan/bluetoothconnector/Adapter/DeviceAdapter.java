@@ -204,7 +204,6 @@ public class DeviceAdapter
          */
         final TextView mDeviceAddressView;
 
-         CardView cardView;
 
         /**
          * The item of this ViewHolder.
@@ -219,10 +218,6 @@ public class DeviceAdapter
         ViewHolder(View view) {
             super(view);
             mView = view;
-            cardView = (CardView) view.findViewById(R.id.cardView);
-            cardView.setCardBackgroundColor(Color.BLUE);
-            cardView.setBackgroundColor(Color.GREEN);
-
             mDeviceNameView = (TextView) view.findViewById(R.id.name_of_device);
             mDeviceAddressView = (TextView) view.findViewById(R.id.ssiID_of_device);
         }
