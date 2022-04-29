@@ -33,6 +33,12 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
     private lateinit var bondingProgressDialog: ProgressDialog
     private var progressBar : ProgressBar
 
+    fun callAdapterProccess(mActivity: callAdapterProccess) {
+        //Android/Java doesn't recoginze testMethod here????
+        mActivity.callAdapterItemClick()
+    }
+
+
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.list_device, this, false)
         val set = ConstraintSet()
