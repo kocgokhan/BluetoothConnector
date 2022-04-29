@@ -17,6 +17,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/name_of_device"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ssiID_of_device"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/name_of_device"
             app:layout_constraintTop_toBottomOf="@+id/name_of_device" />
 
@@ -34,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="@string/connection_status"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/name_of_device" />
     </androidx.constraintlayout.widget.ConstraintLayout>
