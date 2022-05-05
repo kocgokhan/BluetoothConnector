@@ -141,7 +141,9 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
             }
         }
     }
-
+    fun deviceDetailToString(device: BluetoothDevice): String? {
+        return "[Address: " + device.address + ", Name: " + device.name + "]"
+    }
 
     override fun startLoading() {
         recyclerView.startLoading()
