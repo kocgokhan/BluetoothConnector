@@ -84,10 +84,6 @@ public class DeviceAdapter
         });
     }
 
-
-
-
-
     /**
      * Returns the icon shown on the left of the device inside the list.
      *

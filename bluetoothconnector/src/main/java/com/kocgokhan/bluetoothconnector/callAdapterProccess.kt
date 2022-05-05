@@ -1,6 +1,6 @@
 package com.kocgokhan.bluetoothconnector
 
 interface callAdapterProccess {
-    fun callAdapterItemClick(device_name : String)
+    fun deviceDetailToString(device_name : String)
 
 }
