@@ -116,6 +116,7 @@ class BluetoothConnector @JvmOverloads constructor(context: Context, attrs: Attr
     }
 
     override fun onItemClick(device : BluetoothDevice) {
+        deviceDetailToString(device)
         if (bluetooth.isAlreadyPaired(device)) {
             //Toast.makeText(this, R.string.device_already_paired, Toast.LENGTH_SHORT).show()
             Snackbar.make(this, R.string.device_already_paired, Snackbar.LENGTH_SHORT)
